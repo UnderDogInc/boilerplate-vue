@@ -1,0 +1,73 @@
+{
+  "name": "vue-project-template",
+  "version": "0.0.1",
+  "author": "",
+  "type": "module",
+  "private": true,
+  "browserslist": [
+    "cover 99.5%"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint src --fix",
+    "format": "prettier .  --write",
+    "type-check": "vue-tsc --noEmit",
+    "stylelint": "npx stylelint \"**/*.{scss,vue}\" --fix",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{ts,vue}": [
+      "eslint --fix",
+      "vue-tsc --noEmit"
+    ],
+    "*.{scss,vue}": [
+      "stylelint --fix"
+    ]
+  },
+  "dependencies": {
+    "@tanstack/vue-query": "^5.62.0",
+    "@vitejs/plugin-vue": "^6.0.2",
+    "autoprefixer": "^10.4.22",
+    "date-fns": "^4.1.0",
+    "pinia": "^3.0.4",
+    "postcss": "^8.5.6",
+    "prettier": "^3.6.2",
+    "@primeuix/themes": "^4.0.0",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.4.1",
+    "sass": "^1.94.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-vue-devtools": "^7.7.7",
+    "vite-tsconfig-paths": "^5.1.4",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/eslint": "^9.6.1",
+    "@typescript-eslint/eslint-plugin": "^8.47.0",
+    "@typescript-eslint/parser": "^8.47.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-unused-imports": "^4.3.0",
+    "eslint-plugin-vue": "^10.6.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.11",
+    "vue-eslint-parser": "^10.2.0",
+    "vite-plugin-eslint2": "^5.0.4",
+    "@vue/tsconfig": "^0.7.0",
+    "@types/node": "^24.10.1",
+    "globals": "^16.5.0",
+    "jsdom": "^26.1.0",
+    "postcss-html": "^1.8.0",
+    "stylelint": "^16.26.0",
+    "stylelint-config-recess-order": "^7.4.0",
+    "stylelint-config-recommended-vue": "^1.6.1",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-order": "^7.0.0",
+    "tailwindcss": "^3.4.0",
+    "vue-tsc": "^3.1.5"
+  }
+}
