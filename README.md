@@ -24,7 +24,7 @@ yarn dev
 ```
 src/
 ├── app/              # App initialization, router, providers
-├── pages/            # Pages (file-based routing)
+├── pages/            # Pages
 ├── widgets/          # Complex feature compositions
 ├── features/         # Business features
 ├── entities/         # Business entities (data layer)
